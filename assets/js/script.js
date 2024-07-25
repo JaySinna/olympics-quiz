@@ -83,6 +83,91 @@ let quizQuestions = [
                 correct: true
             }
         ]
+    },
+    {
+        question: 'Which famous Olympic Gold medallist lit the Olympic torch in Atlanta 1996?',
+        answers: [
+            {
+                text: 'Muhammad Ali',
+                correct: true
+            },
+            {
+                text: 'Carl Lewis',
+                correct: false
+            },
+            {
+                text: 'Ian Thorpe',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Which city hosted the Olympic games of 2000?',
+        answers: [
+            {
+                text: 'New York',
+                correct: false
+            },
+            {
+                text: 'Moscow',
+                correct: false
+            },
+            {
+                text: 'Sydney',
+                correct: true
+            }
+        ]
+    },
+    {
+        question: 'Which country has won the most Olympic medals in history?',
+        answers: [
+            {
+                text: 'Russia',
+                correct: false
+            },
+            {
+                text: 'USA',
+                correct: true
+            },
+            {
+                text: 'China',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Which famous sprinter won 4 Gold medals at the 1936 Olympic Games in Berlin?',
+        answers: [
+            {
+                text: 'Michael Johnson',
+                correct: false
+            },
+            {
+                text: 'Maurice Greene',
+                correct: false
+            },
+            {
+                text: 'Jesse Owens',
+                correct: true
+            }
+        ]
+    },
+    {
+        question: 'Before 2012, when was the last time London hosted the Olympic Games?',
+        answers: [
+            {
+                text: '1948',
+                correct: true
+            },
+            {
+                text: '1908',
+                correct: false
+            },
+            {
+                text: '1988',
+                correct: false
+            }
+        ]
     }
 ];
 
@@ -93,6 +178,11 @@ let nextButton = document.getElementById('next-button');
 let currentQuestionNumber = 0;
 let score = 0;
 
+/**
+ * Sets the starting question number and score to 0, sets the
+ * inner HTML of the next button and calls the displayQuestion
+ * function
+ */
 function startQuiz() {
     currentQuestionNumber = 0;
     score = 0;
@@ -100,6 +190,12 @@ function startQuiz() {
     displayQuestion();
 }
 
+/**
+ * Gets questions from the quizQuestions array to be shown in 
+ * the question area, also creates button for each of the answer
+ * choices and adds the click event listener to each answer
+ * button
+ */
 function displayQuestion() {
     resetQuestions();
     let currentQuestion = quizQuestions[currentQuestionNumber];
@@ -118,6 +214,9 @@ function displayQuestion() {
     });
 }
 
+/**
+ * Removes default answer buttons from question pages
+ */
 function resetQuestions() {
     nextButton.style.display = 'none';
     while(answerButtons.firstChild) {
@@ -125,6 +224,10 @@ function resetQuestions() {
     }
 }
 
+/**
+ * Processes answer selected by the user
+ * @param {object} event Event that triggers this event handler
+ */
 function selectAnswer(event) {
     let selectedButton = event.target;
     let isCorrect = selectedButton.dataset.correct === 'true';
@@ -143,6 +246,10 @@ function selectAnswer(event) {
     nextButton.style.display = 'block';
 }
 
+/**
+ * Displays user score after completing questions and changes in HTML
+ * of the next button to 'play again'
+ */
 function displayScore() {
     resetQuestions();
     questionElement.innerHTML = `You scored ${score} out of ${quizQuestions.length}`;
@@ -150,6 +257,10 @@ function displayScore() {
     nextButton.style.display = 'block';
 }
 
+/**
+ * Controls functionality of next button as to whether
+ * to display another question or the score page
+ */
 function handleNextButton() {
     currentQuestionNumber++;
     if (currentQuestionNumber < quizQuestions.length) {
@@ -159,6 +270,9 @@ function handleNextButton() {
     }
 }
 
+/**
+ * Adds click event listener to next button
+ */
 nextButton.addEventListener('click', function() {
     if (currentQuestionNumber < quizQuestions.length) {
         handleNextButton();
