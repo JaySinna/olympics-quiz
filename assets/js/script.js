@@ -53,7 +53,7 @@ let quizQuestions = [
 ];
 
 let questionElement = document.getElementById('questions');
-let answerButton = document.getElementById('answer-buttons');
+let answerButtons = document.getElementById('answer-buttons');
 let nextButton = document.getElementById('next-button');
 
 let currentQuestionNumber = 0;
@@ -67,9 +67,24 @@ function startQuiz() {
 }
 
 function displayQuestion() {
+    resetQuestions();
     let currentQuestion = quizQuestions[currentQuestionNumber];
     let questionNumber = currentQuestionNumber + 1;
     questionElement.innerHTML = questionNumber + '. ' + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        let button = document.createElement('button');
+        button.innerHTML = answer.text;
+        button.classList.add('button');
+        answerButtons.appendChild(button);
+    });
 }
 
+function resetQuestions() {
+    nextButton.style.display = 'none';
+    while(answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
 
+startQuiz();
