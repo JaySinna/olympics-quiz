@@ -59,3 +59,12 @@ body {
     background: grey;
 }
 
+#next-button {
+    background: darkblue;
+    color: white;
+    border-radius: 3px;
+    margin-left: 40px;
+    padding: 5px;
+    display: none;
+}
+
