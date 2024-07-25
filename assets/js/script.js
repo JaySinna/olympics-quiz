@@ -66,6 +66,23 @@ let quizQuestions = [
                 correct: false
             }
         ]
+    },
+    {
+        question: 'In which Olympic Games did Usain Bolt win his first Gold medals?',
+        answers: [
+            {
+                text: 'London 2012',
+                correct: false
+            },
+            {
+                text: 'Rio 2016',
+                correct: false
+            },
+            {
+                text: 'Beijing 2008',
+                correct: true
+            }
+        ]
     }
 ];
 
