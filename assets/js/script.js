@@ -25,7 +25,7 @@ let quizQuestions = [
             },
             {
                 text: 'Beijing',
-                correct: true
+                correct: false
             },
             {
                 text: 'Athens',
@@ -46,6 +46,23 @@ let quizQuestions = [
             },
             {
                 text: 'Bronze',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Which Olympian has the most Olympic Gold medals with 23?',
+        answers: [
+            {
+                text: 'Michael Phelps',
+                correct: true
+            },
+            {
+                text: 'Steve Redgrave',
+                correct: false
+            },
+            {
+                text: 'Usain Bolt',
                 correct: false
             }
         ]
