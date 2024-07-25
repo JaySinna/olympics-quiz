@@ -125,8 +125,8 @@ function resetQuestions() {
     }
 }
 
-function selectAnswer(e) {
-    let selectedButton = e.target;
+function selectAnswer(event) {
+    let selectedButton = event.target;
     let isCorrect = selectedButton.dataset.correct === 'true';
     if (isCorrect) {
         selectedButton.classList.add('correct');
