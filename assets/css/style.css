@@ -5,6 +5,8 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+/* Heading */
+
 .heading {
     text-align: center;
     font-size: 300%;
@@ -15,6 +17,8 @@ body {
     padding-right: 5px;
     padding-left: 5px;
 }
+
+/* Quiz layout */
 
 #quiz-area {
     background: url('../images/running-track.webp') no-repeat center center/cover;
@@ -31,5 +35,19 @@ body {
     margin-left: 420px;
     position: relative;
     margin-top: 250px;
-    border-radius: 50px;
+    border-radius: 60px;
+    border: 2px black solid;
+}
+
+#questions-title {
+    font-size: 170%;
+    margin-left: 270px;
+    padding-top: 10px;
+}
+
+#quiz-questions {
+    border: 2px black solid;
+    width: 80%;
+    margin: 10px auto;
+    height: 15vh;
 }
