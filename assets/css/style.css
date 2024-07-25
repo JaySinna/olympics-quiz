@@ -1,0 +1,35 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 300%;
+}
+
+.logo {
+    height: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#quiz-area {
+    background: url('../images/running-track.webp') no-repeat center center/cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+}
+
+#questions-area {
+    background-color: rgba(180, 180, 180, 0.8);
+    height: 35vh;
+    width: 50%;
+    margin-left: 420px;
+    position: relative;
+    margin-top: 250px;
+    border-radius: 50px;
+}
