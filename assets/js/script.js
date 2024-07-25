@@ -96,6 +96,7 @@ function selectAnswer(e) {
     let isCorrect = selectedButton.dataset.correct === 'true';
     if (isCorrect) {
         selectedButton.classList.add('correct');
+        score++
     } else {
         selectedButton.classList.add('incorrect');
     }
@@ -107,5 +108,29 @@ function selectAnswer(e) {
     })
     nextButton.style.display = 'block';
 }
+
+function displayScore() {
+    resetQuestions();
+    questionElement.innerHTML = `You scored ${score} out of ${quizQuestions.length}`;
+    nextButton.innerHTML = 'Play Again';
+    nextButton.style.display = 'block';
+}
+
+function handleNextButton() {
+    currentQuestionNumber++;
+    if (currentQuestionNumber < quizQuestions.length) {
+        displayQuestion();
+    } else {
+        displayScore();
+    }
+}
+
+nextButton.addEventListener('click', function() {
+    if (currentQuestionNumber < quizQuestions.length) {
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+});
 
 startQuiz();
