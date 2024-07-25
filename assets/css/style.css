@@ -57,7 +57,7 @@ body {
     padding: 5px;
 }
 
-.button:hover {
+.button:hover:not([disabled]) {
     background: grey;
 }
 
@@ -68,5 +68,13 @@ body {
     margin-left: 40px;
     padding: 5px;
     display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: lightcoral;
 }
 
