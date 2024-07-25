@@ -39,15 +39,23 @@ body {
     border: 2px black solid;
 }
 
-#questions-title {
-    font-size: 170%;
-    margin-left: 270px;
-    padding-top: 10px;
-}
-
-#quiz-questions {
-    border: 2px black solid;
+#questions {
     width: 80%;
     margin: 10px auto;
-    height: 15vh;
+    height: 8vh;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    font-size: 150%;
 }
+
+.button {
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.button:hover {
+    background: grey;
+}
+
