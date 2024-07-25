@@ -70,6 +70,8 @@ body {
     display: none;
 }
 
+/* Classes added in JS file for answer button colors */
+
 .correct {
     background-color: lightgreen;
 }
