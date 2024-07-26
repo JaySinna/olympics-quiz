@@ -171,9 +171,9 @@ let quizQuestions = [
     }
 ];
 
-let questionElement = document.getElementById('questions');
-let answerButtons = document.getElementById('answer-buttons');
-let nextButton = document.getElementById('next-button');
+const questionElement = document.getElementById('questions');
+const answerButtons = document.getElementById('answer-buttons');
+const nextButton = document.getElementById('next-button');
 
 let currentQuestionNumber = 0;
 let score = 0;
