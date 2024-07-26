@@ -186,7 +186,7 @@ let score = 0;
 function startQuiz() {
     currentQuestionNumber = 0;
     score = 0;
-    nextButton.innerHTML = 'Next Question';
+    nextButton.innerHTML = 'Next Question!';
     displayQuestion();
 }
 
@@ -252,8 +252,8 @@ function selectAnswer(event) {
  */
 function displayScore() {
     resetQuestions();
-    questionElement.innerHTML = `You scored ${score} out of ${quizQuestions.length}`;
-    nextButton.innerHTML = 'Play Again';
+    questionElement.innerHTML = `You scored ${score} out of ${quizQuestions.length}!`;
+    nextButton.innerHTML = 'Play Again!';
     nextButton.style.display = 'block';
 }
 
