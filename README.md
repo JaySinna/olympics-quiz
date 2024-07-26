@@ -60,6 +60,13 @@ After completing the last question, the user will be shown their score out of 10
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+- JavaScript
+  - No errors were found when passing through the official JavaScript validator https://jshint.com/
+  - The following metrics were returned:
+  - There are 9 functions in this file.
+  - Function with the largest signature take 1 arguments, while the median is 0.
+  - Largest function has 8 statements in it, while the median is 4.
+  - The most complex function has a cyclomatic complexity value of 2 while the median is 2.
 - Accessibility
   - I confirmed that the colours and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
@@ -83,6 +90,7 @@ The live link can be found here - https://jaysinna.github.io/olympics-quiz/
 ### Content 
 
 - The content for the quiz questions and answers was taken from Google searches.
+- Instructions on how to implement quiz questions array and create game functions were taken from various YouTube tutorials and Google searches.
 
 ### Media
 

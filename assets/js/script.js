@@ -1,3 +1,7 @@
+/**
+ * Create an array of questions to be used
+ * for the quiz game
+ */
 let quizQuestions = [
     {
         question: 'When was the first modern Olympic Games held?',
@@ -171,6 +175,9 @@ let quizQuestions = [
     }
 ];
 
+/**
+ * Declare constants for DOM elements
+ */
 const questionElement = document.getElementById('questions');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-button');
@@ -233,7 +240,7 @@ function selectAnswer(event) {
     let isCorrect = selectedButton.dataset.correct === 'true';
     if (isCorrect) {
         selectedButton.classList.add('correct');
-        score++
+        score++;
     } else {
         selectedButton.classList.add('incorrect');
     }
@@ -242,7 +249,7 @@ function selectAnswer(event) {
             button.classList.add('correct');
         }
         button.disabled = true;
-    })
+    });
     nextButton.style.display = 'block';
 }
 
