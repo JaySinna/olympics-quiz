@@ -36,7 +36,7 @@ body {
     position: relative;
     margin-top: 250px;
     border-radius: 60px;
-    border: 2px black solid;
+    border: 2px black solid
 }
 
 #questions {
@@ -78,4 +78,13 @@ body {
 
 .incorrect {
     background-color: lightcoral;
+}
+
+/* Media query: tablets or small desktops (1200px and under) */
+@media screen and (max-width: 1200px) {
+    #questions-area {
+        margin-left: 260px;
+        margin-top: 380px;
+        height: 28vh;
+    }
 }
