@@ -88,3 +88,12 @@ body {
         height: 28vh;
     }
 }
+
+/* Media query: small tablets or large phones (768px and under) */
+@media screen and (max-width: 768px) {
+    #questions-area {
+        margin-left: 180px;
+        margin-top: 280px;
+        height: 30vh;
+    }
+}
