@@ -106,4 +106,12 @@ body {
         font-size: 70%;
         width: 60%;
     }
+
+    .logo-one {
+        display: none;
+    }
+
+    .logo-two {
+        padding-top: 10%;
+    }
 }
