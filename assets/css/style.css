@@ -97,3 +97,13 @@ body {
         height: 30vh;
     }
 }
+
+/* Media query: small tablets or large phones (768px and under) */
+@media screen and (max-width: 576px) {
+    #questions-area {
+        margin: auto;
+        margin-top: 27vh;
+        font-size: 70%;
+        width: 60%;
+    }
+}
