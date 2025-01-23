@@ -104,7 +104,7 @@ body {
         margin: auto;
         margin-top: 27vh;
         font-size: 70%;
-        width: 60%;
+        width: 80%;
     }
 
     .logo-one {
@@ -113,5 +113,18 @@ body {
 
     .logo-two {
         padding-top: 10%;
+    }
+
+    #answer-buttons {
+        padding: 0 5%;
+    }
+
+    .button {
+        margin: 1%;
+    }
+
+    #next-button {
+        margin-left: 8%;
+        margin-top: 10px;
     }
 }
